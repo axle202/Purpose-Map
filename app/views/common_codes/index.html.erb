@@ -1,0 +1,25 @@
+<h1>Listing common_codes</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @common_codes.each do |common_code| %>
+  <tr>
+    <td><%= common_code.code %></td>
+    <td><%= common_code.description %></td>
+    <td><%= link_to 'Show', common_code %></td>
+    <td><%= link_to 'Edit', edit_common_code_path(common_code) %></td>
+    <td><%= link_to 'Destroy', common_code, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Common code', new_common_code_path %>

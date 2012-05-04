@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @common_code.code %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @common_code.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_common_code_path(@common_code) %> |
+<%= link_to 'Back', common_codes_path %>

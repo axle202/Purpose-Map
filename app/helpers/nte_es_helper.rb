@@ -1,0 +1,2 @@
+module NteEsHelper
+end

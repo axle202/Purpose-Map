@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  NTEE: MyString
+  ZipCode: MyString
+
+two:
+  Name: MyString
+  NTEE: MyString
+  ZipCode: MyString
