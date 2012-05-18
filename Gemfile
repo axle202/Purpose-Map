@@ -45,3 +45,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'heroku'
 end
+
+group :production do
+  gem 'pg'
+end
