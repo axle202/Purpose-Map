@@ -43,4 +43,5 @@ gem 'geocoder'
 group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'heroku'
 end
