@@ -39,3 +39,8 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem 'geocoder'
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+end

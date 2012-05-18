@@ -30,6 +30,10 @@
   <%= @organization.longitude %>
 </p>
 
+<p class="map">
+  <%= image_tag google_maps_with_neighbors(@organization) %>
+</p>
+
 <ul>
   <%- @organization.nearbys(5).map do |neighbor| %>
     <li>
