@@ -12,16 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Name %><br />
-    <%= f.text_field :Name %>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :NTEE %><br />
-    <%= f.text_field :NTEE %>
+    <%= f.label :ntee, 'NTEE' %><br />
+    <%= f.text_field :ntee %>
   </div>
   <div class="field">
-    <%= f.label :ZipCode %><br />
-    <%= f.text_field :ZipCode %>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
   </div>
   <div class="actions">
     <%= f.submit %>

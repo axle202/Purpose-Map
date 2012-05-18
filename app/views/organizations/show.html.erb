@@ -2,18 +2,41 @@
 
 <p>
   <b>Name:</b>
-  <%= @organization.Name %>
+  <%= @organization.name %>
 </p>
 
 <p>
   <b>Ntee:</b>
-  <%= @organization.NTEE %>
+  <%= @organization.ntee %>
 </p>
 
 <p>
-  <b>Zipcode:</b>
-  <%= @organization.ZipCode %>
+  <b>Address:</b>
+  <%= @organization.address %>
 </p>
+
+<p>
+  <b>Zip:</b>
+  <%= @organization.zip %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @organization.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @organization.longitude %>
+</p>
+
+<ul>
+  <%- @organization.nearbys(5).map do |neighbor| %>
+    <li>
+    <%= link_to neighbor.name, neighbor %> (<%= neighbor.distance.round(1) %> miles)
+    </li>
+  <%- end %>
+</ul>
 
 
 <%= link_to 'Edit', edit_organization_path(@organization) %> |
