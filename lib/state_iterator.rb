@@ -7,6 +7,7 @@ class StateIterator
 
     def import_all
       files.map do |file|
+        puts "Parsing #{file}.xls"
         import_from file
       end
     end

@@ -1,7 +1,7 @@
 class Organization < ActiveRecord::Base
 
   geocoded_by :full_address
-  after_validation :geocode, :if => :full_address_changed?
+  after_validation :geocode, :if => :full_address_changed?, :unless => lambda { self.new_record? }
 
   validates_presence_of :name, :address
 
