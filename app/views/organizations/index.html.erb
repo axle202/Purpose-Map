@@ -22,9 +22,9 @@
 <% @organizations.each do |organization| %>
   <tr>
     <td><%= organization.name %></td>
-    <td><%= organization.ntee %></td>
+    <td><%= organization.ntee_code %></td>
     <td><%= organization.address %></td>
-    <td><%= organization.zip %></td>
+    <td><%= organization.zip_code %></td>
     <td><%= organization.latitude %></td>
     <td><%= organization.longitude %></td>
     <td><%= link_to 'Show', organization %></td>
