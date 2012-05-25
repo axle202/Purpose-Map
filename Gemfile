@@ -43,6 +43,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'heroku'
   gem 'sqlite3'
+  gem 'importex'
 end
 
 group :production do

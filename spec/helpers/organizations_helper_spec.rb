@@ -1,4 +1,4 @@
-require 'spec/spec_helper'
+require_relative '../../spec/spec_helper' # Do not commit - ruby version difference
 require 'ostruct'
 
 describe OrganizationsHelper do
