@@ -37,13 +37,13 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem 'geocoder'
+gem 'importex'
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'heroku'
   gem 'sqlite3'
-  gem 'importex'
 end
 
 group :production do
